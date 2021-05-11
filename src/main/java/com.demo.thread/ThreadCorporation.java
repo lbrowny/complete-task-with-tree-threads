@@ -19,7 +19,7 @@ public class ThreadCorporation {
 	public static void main(String[] args) {
 		//初始化任务
 		BlockingQueue<Runnable> allTaskQueue = new ArrayBlockingQueue<>(30);
-		for (int i = 0; i <= 30; i++) {
+		for (int i = 0; i < 30; i++) {
 			allTaskQueue.add(new PrintTask(i % 3 + 1));
 		}
 		
