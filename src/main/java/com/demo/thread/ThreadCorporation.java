@@ -65,12 +65,11 @@ public class ThreadCorporation {
 					if (waitPublishTask != null){
 						publishQueue.put(waitPublishTask);
 					}else {
-						break;
+						System.exit(0);
 					}
 				}
 			} catch (InterruptedException e) {
 				//
-				throw new RuntimeException(e);
 			}
 		}
 	}
